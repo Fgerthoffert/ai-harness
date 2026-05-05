@@ -1,4 +1,4 @@
-# ai-harnesses
+# ai-harness
 
 Personal Skills, Agents and other AI resources for Agentic workflows by [Francois Gerthoffert](https://github.com/Fgerthoffert).
 
@@ -25,19 +25,19 @@ A personal plugin containing:
 Register this repository as a Copilot CLI marketplace:
 
 ```sh
-copilot plugin marketplace add Fgerthoffert/ai-harnesses
+copilot plugin marketplace add Fgerthoffert/ai-harness
 ```
 
 Browse available plugins:
 
 ```sh
-copilot plugin marketplace browse ai-harnesses
+copilot plugin marketplace browse ai-harness
 ```
 
 Then install the personal plugin:
 
 ```sh
-copilot plugin install fge-personal@ai-harnesses
+copilot plugin install fge-personal@ai-harness
 ```
 
 ### Install directly
@@ -45,13 +45,13 @@ copilot plugin install fge-personal@ai-harnesses
 You can also install the plugin directly from the repository without registering the marketplace:
 
 ```sh
-copilot plugin install Fgerthoffert/ai-harnesses
+copilot plugin install Fgerthoffert/ai-harness
 ```
 
 Or from the plugin subdirectory:
 
 ```sh
-copilot plugin install Fgerthoffert/ai-harnesses:plugins/fge-personal
+copilot plugin install Fgerthoffert/ai-harness:plugins/fge-personal
 ```
 
 ### Verify the installation
