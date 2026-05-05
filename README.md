@@ -8,15 +8,13 @@ This repository is also a **GitHub Copilot CLI plugin marketplace**, making it e
 
 ## Plugins
 
-### `fgerthoffert-personal`
+### `fge-personal`
 
-A personal plugin containing placeholder skills for:
+A personal plugin containing:
 
-| Skill | Description |
-|---|---|
-| [`writing-style`](./plugins/fgerthoffert-personal/skills/writing-style/SKILL.md) | Applies Francois Gerthoffert's personal writing style when generating or editing text. |
-
-> **Note:** This skill is currently a placeholder. Detailed guidelines and examples will be added over time.
+| Skill                                                                   | Description                                                                            |
+| ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| [`writing-style`](./plugins/fge-personal/skills/writing-style/SKILL.md) | Applies Francois Gerthoffert's personal writing style when generating or editing text. |
 
 ---
 
@@ -30,18 +28,30 @@ Register this repository as a Copilot CLI marketplace:
 copilot plugin marketplace add Fgerthoffert/ai-harnesses
 ```
 
+Browse available plugins:
+
+```sh
+copilot plugin marketplace browse ai-harnesses
+```
+
 Then install the personal plugin:
 
 ```sh
-copilot plugin install fgerthoffert-personal@ai-harnesses
+copilot plugin install fge-personal@ai-harnesses
 ```
 
 ### Install directly
 
-You can also install the plugin directly without registering the marketplace:
+You can also install the plugin directly from the repository without registering the marketplace:
 
 ```sh
-copilot plugin install Fgerthoffert/ai-harnesses:plugins/fgerthoffert-personal
+copilot plugin install Fgerthoffert/ai-harnesses
+```
+
+Or from the plugin subdirectory:
+
+```sh
+copilot plugin install Fgerthoffert/ai-harnesses:plugins/fge-personal
 ```
 
 ### Verify the installation
@@ -56,18 +66,25 @@ Or inside an interactive Copilot session:
 /skills list
 ```
 
+The plugin skills can then be invoked by name (for example `writing-style` or `marketplace-doctor`).
+
 ---
 
 ## Repository structure
 
 ```
+.claude-plugin/
+├── marketplace.json            # Primary marketplace manifest
+└── plugin.json                 # Root plugin manifest (direct install)
 .github/
 └── plugin/
-    └── marketplace.json          # Marketplace configuration
+    └── marketplace.json        # Compatibility marketplace manifest
 plugins/
-└── fgerthoffert-personal/
-    ├── plugin.json               # Plugin manifest
+└── fge-personal/
+    ├── plugin.json             # Plugin manifest
     └── skills/
+        ├── marketplace-doctor/
+        │   └── SKILL.md         # Marketplace diagnostics skill
         └── writing-style/
-            └── SKILL.md          # Writing style skill (placeholder)
+            └── SKILL.md         # Writing style skill
 ```
