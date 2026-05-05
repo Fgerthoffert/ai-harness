@@ -6,27 +6,22 @@
   },
   "metadata": {
     "description": "Personal skills and AI resources for agentic workflows by Francois Gerthoffert.",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
   "plugins": [
     {
-      "name": "fgerthoffert-personal",
-      "source": "./plugins/fgerthoffert-personal",
+      "name": "fge-personal",
+      "source": "./plugins/fge-personal",
       "description": "Personal productivity and writing skills by Francois Gerthoffert.",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "author": {
         "name": "Francois Gerthoffert",
         "email": "francois.gerthoffert@gmail.com"
       },
       "license": "MIT",
-      "keywords": [
-        "writing-style",
-        "marketplace",
-        "personal",
-        "productivity"
-      ],
+      "keywords": ["writing-style", "marketplace", "personal", "productivity"],
       "category": "productivity",
-      "skills": "./plugins/fgerthoffert-personal/skills/"
+      "skills": "./plugins/fge-personal/skills/"
     }
   ]
 }

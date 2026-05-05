@@ -8,14 +8,13 @@ This repository is also a **GitHub Copilot CLI plugin marketplace**, making it e
 
 ## Plugins
 
-### `fgerthoffert-personal`
+### `fge-personal`
 
 A personal plugin containing:
 
-| Skill | Description |
-|---|---|
-| [`writing-style`](./plugins/fgerthoffert-personal/skills/writing-style/SKILL.md) | Applies Francois Gerthoffert's personal writing style when generating or editing text. |
-| [`marketplace-doctor`](./plugins/fgerthoffert-personal/skills/marketplace-doctor/SKILL.md) | Audits and fixes Copilot marketplace/plugin manifest issues so plugin installation and skill discovery work correctly. |
+| Skill                                                                   | Description                                                                            |
+| ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| [`writing-style`](./plugins/fge-personal/skills/writing-style/SKILL.md) | Applies Francois Gerthoffert's personal writing style when generating or editing text. |
 
 ---
 
@@ -38,7 +37,7 @@ copilot plugin marketplace browse ai-harnesses
 Then install the personal plugin:
 
 ```sh
-copilot plugin install fgerthoffert-personal@ai-harnesses
+copilot plugin install fge-personal@ai-harnesses
 ```
 
 ### Install directly
@@ -52,7 +51,7 @@ copilot plugin install Fgerthoffert/ai-harnesses
 Or from the plugin subdirectory:
 
 ```sh
-copilot plugin install Fgerthoffert/ai-harnesses:plugins/fgerthoffert-personal
+copilot plugin install Fgerthoffert/ai-harnesses:plugins/fge-personal
 ```
 
 ### Verify the installation
@@ -81,7 +80,7 @@ The plugin skills can then be invoked by name (for example `writing-style` or `m
 └── plugin/
     └── marketplace.json        # Compatibility marketplace manifest
 plugins/
-└── fgerthoffert-personal/
+└── fge-personal/
     ├── plugin.json             # Plugin manifest
     └── skills/
         ├── marketplace-doctor/

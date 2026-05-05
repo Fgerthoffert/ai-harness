@@ -1,5 +1,5 @@
 {
-  "name": "fgerthoffert-personal",
+  "name": "fge-personal",
   "version": "0.2.0",
   "description": "Personal productivity and writing skills by Francois Gerthoffert.",
   "author": {
@@ -7,11 +7,6 @@
     "email": "francois.gerthoffert@gmail.com"
   },
   "license": "MIT",
-  "skills": "./plugins/fgerthoffert-personal/skills/",
-  "keywords": [
-    "writing-style",
-    "marketplace",
-    "personal",
-    "productivity"
-  ]
+  "skills": "./plugins/fge-personal/skills/",
+  "keywords": ["writing-style", "marketplace", "personal", "productivity"]
 }
